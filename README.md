@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+Movie Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a movie website built with React, TypeScript, and Vite. It uses Redux for state management and Axios for API calls. The website displays a list of movies, which can be filtered by genre and year.
+Features
 
-Currently, two official plugins are available:
+- Fetches and displays a list of movies from an API
+- Allows filtering of movies by genre and year
+- Infinite scrolling feature to load more movies as the user scrolls down
+- Uses Redux for state management
+- Uses Axios for API calls
+How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository to your local machine.
+2. Install the dependencies by running npm install in the project root directory.
+3. Start the development server by running npm run dev.
+4. Open your browser and navigate to http://localhost:5000 to view the application.
+Scripts
 
-## Expanding the ESLint configuration
+- npm run dev: Starts the development server.
+- npm run build: Builds the application for production.
+- npm run lint: Runs the linter to check for code style issues.
+- npm run preview: Serves the production build of the application for preview.
+Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The main application code is located in the src directory. This includes React components, Redux slices, and CSS modules. The vite.config.ts file contains configuration for the Vite build tool. The tsconfig.json and tsconfig.node.json files contain TypeScript configuration.
