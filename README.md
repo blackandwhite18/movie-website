@@ -1,20 +1,23 @@
-++Movie Website
+# Movie Website
 
 This project is a movie website built with React, TypeScript, and Vite. It uses Redux for state management and Axios for API calls. The website displays a list of movies, which can be filtered by genre and year.
-Features
+
+## Features
 
 - Fetches and displays a list of movies from an API
 - Allows filtering of movies by genre and year
 - Infinite scrolling feature to load more movies as the user scrolls down
 - Uses Redux for state management
 - Uses Axios for API calls
-How to Run
+
+## How to Run
 
 1. Clone the repository to your local machine.
 2. Install the dependencies by running npm install in the project root directory.
 3. Start the development server by running npm run dev.
 4. Open your browser and navigate to http://localhost:5000 to view the application.
-Scripts
+
+## Scripts
 
 - npm run dev: Starts the development server.
 - npm run build: Builds the application for production.
